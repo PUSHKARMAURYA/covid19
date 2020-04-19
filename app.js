@@ -7,14 +7,8 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 app.set("view engine","ejs");
 
-var path = require('path')
 var sortJsonArray = require('sort-json-array');
 
-
-var requestl=require("request");
-	var favicon = require('serve-favicon')
-var path = require('path')
-	
 
 
 app.get("/",function(req,res){
