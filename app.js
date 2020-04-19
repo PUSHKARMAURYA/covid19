@@ -17,8 +17,6 @@ var path = require('path')
 	
 
 
-app.use(favicon(path.join('outputDir',  'a.png')))
-
 app.get("/",function(req,res){
 	
 
