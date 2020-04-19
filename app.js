@@ -7,12 +7,16 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 app.set("view engine","ejs");
 
+var path = require('path')
 var sortJsonArray = require('sort-json-array');
+
+
 
 
 
 app.get("/",function(req,res){
 	
+var requestl=require("request");
 
 
 requestl("https://covid19-server.chrismichael.now.sh/api/v1/IndiaCasesByStates",function(err,response,body){
