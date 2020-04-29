@@ -12,6 +12,11 @@ var sortJsonArray = require('sort-json-array');
 
 
 
+var a = require('serve-favicon');
+app.use(a(path.join( 'outputDir', 'dfd.webp')))
+ 
+
+
 
 
 app.get("/",function(req,res){
